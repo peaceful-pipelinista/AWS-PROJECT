@@ -24,6 +24,6 @@ app.post("/submit", async (req, res) => {
   res.send(`<h2>${data.message}</h2>`);
 });
 
-app.listen(3000, () => {
+app.listen(3000, '0.0.0.0', () => {
   console.log("Frontend running on http://localhost:3000");
 });
