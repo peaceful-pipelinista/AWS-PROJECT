@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 app.post("/submit", async (req, res) => {
   const name = req.body.name;
 
-  const response = await fetch(process.env.BACKEND_URL + "/submit", {
+  const response = await fetch("http://65.2.83.217:5000/submit", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: `name=${name}`
